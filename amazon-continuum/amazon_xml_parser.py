@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Author : kai
-Date   : 2019-04-21
+Author : Shelby Nelson shelbeezy@email.arizona.edu
+Date   : 2019-05-28
 Purpose: Print nutrient profiles from the Amazon Continuum Metagenomes
 """
 
@@ -9,7 +9,7 @@ import argparse
 import sys
 import os
 import xml.etree.ElementTree as ET
-import matplotlib.pyplot as plt
+
 
 # --------------------------------------------------
 def get_args():
@@ -69,12 +69,6 @@ def main():
                 d[sub_att.attrib['attribute_name']] = sub_att.text
         data_list.append(d)
 
-
-    #print(len(data_list))
-
-    # for x in data_list:
-    #     print(x)
-
     #example data dictionary
     '''
     {'BioSample': 'SAMN02628401', '1': 'SAMN02628401', 'Sample name': 'ACM1', 'SRA': 'SRS565747',
@@ -95,7 +89,7 @@ def main():
     '''
 
     ### extract depth vs dissolved Oxygen
-    depth1 = []
+'''    depth1 = []
     diss_oxy = []
     for x in data_list:
         if 'diss_oxy' in x and 'depth' in x:
@@ -105,15 +99,6 @@ def main():
             depth_unit = x['depth'].split()[1]
             diss_oxy_unit = x['diss_oxy'].split()[1]
 
-    #plot the dissolved Oxygen profile
-    plt.plot(diss_oxy, depth1, 'ro')
-    plt.title('Dissolved Oxygen vs Depth')
-    plt.xlabel(diss_oxy_unit)
-    plt.ylabel(depth_unit)
-    #plt.show()
-    plt.savefig('Dissolved_Oxygen_profile.png')
-
-    print('see Dissolved_Oxygen_profile.png')
 
     ### extract depth vs dissolved inorganic carbon
     depth2 = []
@@ -125,18 +110,7 @@ def main():
 
             #depth_unit = x['depth'].split()[1]
             diss_inorg_carb_unit = x['diss_inorg_carb'].split()[1]
-
-    #plot dissolved inorganic carbon profile
-    plt.clf()
-    plt.plot(diss_inorg_carb, depth2, 'ro')
-    plt.title('Dissolved Inorganic Carbon vs Depth')
-    plt.xlabel(diss_inorg_carb_unit)
-    plt.ylabel(depth_unit)
-    plt.tick_params(axis='x', labelsize=5)
-    #plt.show()
-    plt.savefig('Dissolved_Inorganic_carbon_profile.png')
-
-    print('see Dissolved_Inorganic_carbon_profile.png')
+'''
 
 # --------------------------------------------------
 if __name__ == '__main__':
