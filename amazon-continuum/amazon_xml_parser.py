@@ -5,10 +5,13 @@ Date   : 2019-05-28
 Purpose: Print nutrient profiles from the Amazon Continuum Metagenomes
 """
 
+import csv
 import argparse
 import sys
 import os
 import xml.etree.ElementTree as ET
+import pandas as pd
+
 
 
 # --------------------------------------------------
@@ -24,12 +27,10 @@ def get_args():
 
     return parser.parse_args()
 
-
 # --------------------------------------------------
 def warn(msg):
     """Print a message to STDERR"""
     print(msg, file=sys.stderr)
-
 
 # --------------------------------------------------
 def die(msg='Something bad happened'):
@@ -37,10 +38,8 @@ def die(msg='Something bad happened'):
     warn(msg)
     sys.exit(1)
 
-
 # --------------------------------------------------
 def main():
-    """Make a jazz noise here"""
     args = get_args()
     in_file = args.xml
 
@@ -55,19 +54,24 @@ def main():
     # parse the xml file and make a list of dictionaries containing all the metadata
     for elem in root:
         d = {}
+       # print('NEW ELEMENT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
         for ids in elem.findall('Ids'):
             for sub_ids in ids:
-                #d[sub_ids.attrib['db']] = sub_ids.text
                 for key, val in sub_ids.attrib.items():
-                    #print(key, val)
+                    
+                    #d[key] = sub_ids.attrib            #my editing
                     d[val] = sub_ids.text
-
+                   # print(d[key], d[val])              #my edititng
         for att in elem.findall('Attributes'):
-            #print(att.tag, att.attrib)
             for sub_att in att:
-                #print(sub_att.attrib, sub_att.text)
+                #print(sub_att.get('attribute_name'), sub_att.text)         #my editing
+               
                 d[sub_att.attrib['attribute_name']] = sub_att.text
+                
         data_list.append(d)
+
+    df = pd.DataFrame(data_list) 
+    df.to_csv('amazon_cont_all.tsv', sep='\t', encoding='utf-8') 
 
     #example data dictionary
     '''
