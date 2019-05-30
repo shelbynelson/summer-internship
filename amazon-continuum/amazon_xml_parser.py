@@ -11,7 +11,7 @@ import sys
 import os
 import xml.etree.ElementTree as ET
 import pandas as pd
-
+import re
 
 
 # --------------------------------------------------
@@ -51,70 +51,48 @@ def main():
     root = tree.getroot()
     data_list = []
 
+    #RegExs
+    float_pattern = '[+-]?\d+(\.\d+)?([eE]\d+)?'
+    withUnits = re.compile('^'+ float_pattern + '(\s)(([\w/-]+)?(\s)?([\w/-]+)?)$')
+    longLat = re.compile('(' + float_pattern + '(\s*([NS]))?)(?:\s*,)?\s+(' + float_pattern + '(\s*([EW]))?)')
+
+    #count = 0          #For Debugging
     # parse the xml file and make a list of dictionaries containing all the metadata
     for elem in root:
+        print('NEW ELEMENT.........................................................')   #For Debugging
         d = {}
-       # print('NEW ELEMENT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
         for ids in elem.findall('Ids'):
             for sub_ids in ids:
                 for key, val in sub_ids.attrib.items():
-                    
-                    #d[key] = sub_ids.attrib            #my editing
                     d[val] = sub_ids.text
-                   # print(d[key], d[val])              #my edititng
+
         for att in elem.findall('Attributes'):
-            for sub_att in att:
-                #print(sub_att.get('attribute_name'), sub_att.text)         #my editing
-               
+            for sub_att in att:               
                 d[sub_att.attrib['attribute_name']] = sub_att.text
+
+                if withUnits.match(sub_att.text):
+                    match = withUnits.match(sub_att.text)
+                    units = match.group(4)
+                elif longLat.match(sub_att.text):
+                    match = longLat.match(sub_att.text)
+                    latitude = match.group(1)
+                    longitude = match.group(6)
+                    units = latitude,longitude
+                else:
+                    units = ''
                 
+                print(d[sub_att.attrib['attribute_name']],'\t\t', units)   #For debugging
+                      
         data_list.append(d)
-
-    df = pd.DataFrame(data_list) 
-    df.to_csv('amazon_cont_all.tsv', sep='\t', encoding='utf-8') 
-
-    #example data dictionary
-    '''
-    {'BioSample': 'SAMN02628401', '1': 'SAMN02628401', 'Sample name': 'ACM1', 'SRA': 'SRS565747',
-     'env_package': 'MIGS/MIMS/MIMARKS.water', 'investigation_type': 'Metagenome',
-     'sampling_cruise': 'R/V Knorr, May-June 2010', 'target_molecules': 'Genomic DNA',
-     'biome': 'surface seawater', 'feature': 'Amazon River Plume',
-     'geo_loc_name': 'Atlantic Ocean:Western Tropical North Atlantic Ocean',
-     'site_name': 'Station 2', 'lat_lon': '10.29 -54.51', 'collection_date': '2010-05-25',
-     'collection_time': '0755', 'depth': '4.47 m', 'material': 'water', 'samp_volume': '10.8 L',
-     'min_filter_size': '2.0 _m', 'max_filter_size': '156 _m', 'temp': '28.63 C',
-     'salinity': '31.80 PSU', 'pressure': '4.50 Db', 'density': '1019.80 kgm-2',
-     'sigma-theta': '19.78', 'diss_oxy': '196.25 _mol/kg', 'oxy_sat': '98.70 pct',
-     'beam_trans': '90.13 pct', 'beam_atten': '0.42 m-1', 'fluorescence': '0.61 mgm-3',
-     'turbidity': '1.17 NTU', 'surf_irradiance': '796.66 _Em-2sec-1', 'corr_irradiance': '2.09 pct',
-     'PAR': '16.71 _Em-2sec-1', 'bacteria_carb_prod': '112.48 pmol leu/L/hr',
-     'diss_inorg_carb': '1802 _mol/kg', 'sequencing_method': 'Illumina PE 150x150',
-     'sequencing_machine': 'Genome Analyzer IIx', 'std_norm_factor': '326737'}
-    '''
-
-    ### extract depth vs dissolved Oxygen
-'''    depth1 = []
-    diss_oxy = []
-    for x in data_list:
-        if 'diss_oxy' in x and 'depth' in x:
-            depth1.append(float(x['depth'].split()[0]))
-            diss_oxy.append(float(x['diss_oxy'].split()[0]))
-
-            depth_unit = x['depth'].split()[1]
-            diss_oxy_unit = x['diss_oxy'].split()[1]
-
-
-    ### extract depth vs dissolved inorganic carbon
-    depth2 = []
-    diss_inorg_carb = []
-    for x in data_list:
-        if 'diss_inorg_carb' in x and 'depth' in x:
-            depth2.append(float(x['depth'].split()[0]))
-            diss_inorg_carb.append(float(x['diss_inorg_carb'].split()[0]))
-
-            #depth_unit = x['depth'].split()[1]
-            diss_inorg_carb_unit = x['diss_inorg_carb'].split()[1]
-'''
+        
+        '''                   #For debugging
+        count = count + 1
+        if count == 28:
+            break
+        '''
+        
+    #  df = pd.DataFrame(data_list) 
+    #  df.to_csv('amazon_cont_all.tsv', sep='\t', encoding='utf-8') 
 
 # --------------------------------------------------
 if __name__ == '__main__':
