@@ -2,7 +2,7 @@
 """
 Author : Shelby Nelson shelbeezy@email.arizona.edu
 Date   : 2019-05-28
-Purpose: Print nutrient profiles from the Amazon Continuum Metagenomes
+Purpose: Print nutrient profiles from the Amazon Continuum Metagenomes with seperated values and units
 """
 
 import csv
@@ -13,7 +13,6 @@ import xml.etree.ElementTree as ET
 import pandas as pd
 import re
 
-
 # --------------------------------------------------
 def get_args():
     """get command-line arguments"""
@@ -23,7 +22,6 @@ def get_args():
 
     parser.add_argument(
         'xml', metavar='XML', help='XML input')
-
 
     return parser.parse_args()
 
@@ -54,7 +52,7 @@ def main():
     #RegExs
     float_pattern = '[+-]?\d+(\.\d+)?([eE]\d+)?'
     withUnits = re.compile('^('+ float_pattern + ')(\s)(([\w/-]+)?(\s)?([\w/-]+)?)$')
-    longLat = re.compile('(' + float_pattern + '(\s*([NS]))?)(?:\s*,)?\s+(' + float_pattern + '(\s*([EW]))?)')
+    longLat = re.compile('((' + float_pattern + ')(\s*([NS]))?)(?:\s*,)?\s+((' + float_pattern + ')(\s*([EW]))?)')
     date = re.compile('^(?P<year>\d{4})-(?P<month>\d{1,2})(?:-(?P<day>\d{1,2}))?')
     shortMonth = re.compile('^(?P<day>\d{1,2})'
                      '[,-]'
@@ -74,7 +72,6 @@ def main():
                      '\s*'
                      '(?P<year>\d{4})')
 
-
     short_months = 'Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec'.split()
     short_mon2num = dict(map(reversed, enumerate(short_months, 1)))
 
@@ -82,26 +79,21 @@ def main():
                    'September October November December').split()
     long_mon2num = dict(map(reversed, enumerate(long_months, 1)))
 
-
-    count = 0          #For Debugging
     # parse the xml file and make a list of dictionaries containing all the metadata
     for elem in root:
-        #print('NEW ELEMENT.........................................................')   #For Debugging
         d = {}
         for ids in elem.findall('Ids'):
             for sub_ids in ids:
                 for key, val in sub_ids.attrib.items():
                     d[val] = sub_ids.text
                     
-        
         for att in elem.findall('Attributes'):
-            #print(d.keys())
             for sub_att in att:
+                units = ''
+                value = '' 
                 attr_name  = sub_att.attrib['attribute_name']               
                 d[attr_name] = sub_att.text
-                units = ''
-                value = ''    
-                #print(d.keys()) 
+  
                 match1 = date.match(sub_att.text)
                 match2 = shortMonth.match(sub_att.text) or longMonth.match(sub_att.text)
 
@@ -111,10 +103,21 @@ def main():
                     units = match.group(5)
                 elif longLat.match(sub_att.text):
                     match = longLat.match(sub_att.text)
-                    latitude = match.group(1)
-                    longitude = match.group(6)
-                    units = 'Lat: {}, Lon: {}'.format(latitude, longitude)
-                    
+
+                    latitude = match.group(2)
+                    laTotal = match.group(1)
+                    if 'S' in laTotal:
+                        latitude = '-' + latitude
+
+                    longitude = match.group(8)
+                    loTotal = match.group(7)
+                    if 'W' in loTotal:
+                        longitude = '-' + longitude
+
+                    d[attr_name + '_latitude'] = latitude
+                    d[attr_name + '_longitude'] = longitude
+                    del d[attr_name]
+                
                 elif match1:
                     day = match1.group('day') or '01'
                     cleanDate = '{}-{}-{}'.format(match1.group('year'), match1.group('month'), match1.group('day'))
@@ -128,7 +131,8 @@ def main():
                 else:
                     units = ''
                     cleanDate = ''
-                        
+
+                #Assigning/deleting columns        
                 if units:
                     d[attr_name + '_Value'] = value
                     d[attr_name + '_units'] = units
@@ -136,16 +140,10 @@ def main():
                 if cleanDate:
                     d[attr_name + '_'] = cleanDate
                     del d[attr_name]
-
-                #print(sub_att.text,'\t\t', value, '  ', units)      
+                
+ 
         data_list.append(d)
-        
-        '''                 #For debugging
-        count = count + 1
-        if count == 5:
-            break'''
-    #print(data_list)  
-        
+
     df = pd.DataFrame(data_list) 
     df.to_csv('amazon_cont_all.tsv', sep='\t', encoding='utf-8') 
 
