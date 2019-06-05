@@ -142,12 +142,6 @@ def main():
                     del d[attr_name]
                 if (attr_name == 'collection_time') and (':' not in d[attr_name]):
                     d[attr_name] = d[attr_name][:2] + ':' + d[attr_name][2:]
-                '''if (attr_name == 'sampling_cruise') and (d[attr_name] is not ''):   #Is this something to split?
-                    splitList = d[attr_name].split(", ")
-                    d[attr_name + '_name'] = splitList[0]
-                    d[attr_name + '_time_frame'] = splitList[1]
-                    del d[attr_name]'''
-                
  
         data_list.append(d)
 
