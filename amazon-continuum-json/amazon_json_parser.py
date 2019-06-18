@@ -95,7 +95,7 @@ def main():
                                             d[unit_header] = unit_val
                                             if unit_val is None:
                                                 del d[unit_header]
-                                            if col_header == 'collection date':
+                                            if (col_header == 'collection date'):
                                                 del d[col_header]       
                             
                             else:
