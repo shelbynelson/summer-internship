@@ -47,6 +47,9 @@ def main():
 
     data_list = []
     count = 0
+    mu = '\u03BC'
+    
+
     data = open(in_file).read()
     fixed_file = json.loads(re.sub('[\r\n]', '', data))
 
@@ -80,6 +83,10 @@ def main():
 
                                         elif keys == 'unit':
                                             unit_header = col_header + '_units'
+                                            if (attrib_dict is not None) and ('&micro;' in attrib_dict):
+                                                attrib_dict = attrib_dict.replace('&micro;', mu)
+                                            if (attrib_dict is not None) and ('&deg;' in attrib_dict):
+                                                attrib_dict = attrib_dict.replace('&deg;', '')
                                             unit_val = attrib_dict
 
                                         else:
