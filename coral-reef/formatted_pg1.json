@@ -1,0 +1,2297 @@
+{
+    "data": [
+        {
+            "attributes": {
+                "accession": "SRS691150",
+                "analysis-completed": "2019-04-16",
+                "biosample": "SAMN02940998",
+                "collection-date": "2012-07-01",
+                "environment-biome": "ocean",
+                "environment-feature": "Caribbean reef",
+                "environment-material": "Tissue",
+                "geo-loc-name": "Mexico: Caribbean",
+                "host-tax-id": null,
+                "last-update": "2019-04-16T12:58:36",
+                "latitude": 18.3943,
+                "longitude": -87.407,
+                "sample-alias": "Marine Bacteria in Palythoa Sp.",
+                "sample-desc": "Sample collected under permit DAP/2/06504/11//612/1608 CONAPESCA",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-87.407"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Mexico: Caribbean"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2012-07-01"
+                    },
+                    {
+                        "key": "environment (biome)",
+                        "unit": null,
+                        "value": "ocean"
+                    },
+                    {
+                        "key": "environment (feature)",
+                        "unit": null,
+                        "value": "Caribbean reef"
+                    },
+                    {
+                        "key": "environment (material)",
+                        "unit": null,
+                        "value": "Tissue"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "18.3943"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX+"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "Marine Bacteria in Palythoa Sp.",
+                "species": null
+            },
+            "id": "SRS691150",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS691150"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS691150/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004678",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004678"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS691150/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS691272",
+                "analysis-completed": "2019-04-16",
+                "biosample": "SAMN02940977",
+                "collection-date": "2012-07-01",
+                "environment-biome": "Ocean",
+                "environment-feature": "Caribbean reef",
+                "environment-material": "Tissue",
+                "geo-loc-name": "Mexico: Caribbean",
+                "host-tax-id": null,
+                "last-update": "2019-04-16T12:58:36",
+                "latitude": 18.3943,
+                "longitude": -87.407,
+                "sample-alias": "Bacteria in Hyrtios",
+                "sample-desc": "sample collected at caribbean reef under permit DAPA//06054/11/612/1608 CONAPESCA",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-87.407"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Mexico: Caribbean"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2012-07-01"
+                    },
+                    {
+                        "key": "environment (biome)",
+                        "unit": null,
+                        "value": "Ocean"
+                    },
+                    {
+                        "key": "environment (feature)",
+                        "unit": null,
+                        "value": "Caribbean reef"
+                    },
+                    {
+                        "key": "environment (material)",
+                        "unit": null,
+                        "value": "Tissue"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "18.3943"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX+"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "Bacteria in Hyrtios",
+                "species": null
+            },
+            "id": "SRS691272",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS691272"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS691272/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004678",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004678"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS691272/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS692023",
+                "analysis-completed": "2019-04-16",
+                "biosample": "SAMN02940995",
+                "collection-date": "2012-07-01",
+                "environment-biome": "ocean",
+                "environment-feature": "caribbean reef",
+                "environment-material": "tissue",
+                "geo-loc-name": "Mexico: Caribbean",
+                "host-tax-id": null,
+                "last-update": "2019-04-16T12:58:36",
+                "latitude": 18.3943,
+                "longitude": -87.407,
+                "sample-alias": "Marine Bacteria in Aiolochroia Sp.",
+                "sample-desc": "Sample collected under permit DAP/2/06504/11//612/1608 CONAPESCA",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-87.407"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Mexico: Caribbean"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2012-07-01"
+                    },
+                    {
+                        "key": "environment (biome)",
+                        "unit": null,
+                        "value": "ocean"
+                    },
+                    {
+                        "key": "environment (feature)",
+                        "unit": null,
+                        "value": "caribbean reef"
+                    },
+                    {
+                        "key": "environment (material)",
+                        "unit": null,
+                        "value": "tissue"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "18.3943"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX+"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "Marine Bacteria in Aiolochroia Sp.",
+                "species": null
+            },
+            "id": "SRS692023",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS692023"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS692023/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004678",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004678"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS692023/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS652167",
+                "analysis-completed": "2019-04-16",
+                "biosample": "SAMN02898629",
+                "collection-date": "2012-09-01",
+                "environment-biome": "marine coral reef biome",
+                "environment-feature": "animal-associated habitat",
+                "environment-material": null,
+                "geo-loc-name": "Saudi Arabia: coast of Thuwal",
+                "host-tax-id": null,
+                "last-update": "2019-04-16T12:17:27",
+                "latitude": 22.38,
+                "longitude": 39.05,
+                "sample-alias": "Sc2b",
+                "sample-desc": "MIMARKS Survey related sample from sponge metagenome",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "26.0"
+                    },
+                    {
+                        "key": "investigation type",
+                        "unit": null,
+                        "value": "miens-survey"
+                    },
+                    {
+                        "key": "project name",
+                        "unit": null,
+                        "value": "GeoChip-based insights into the microbial functional gene repertoire of marine sponges (HMA, LMA) and seawater"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "39.05"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Saudi Arabia: coast of Thuwal"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2012-09-01"
+                    },
+                    {
+                        "key": "environment (biome)",
+                        "unit": null,
+                        "value": "marine coral reef biome"
+                    },
+                    {
+                        "key": "environment (feature)",
+                        "unit": null,
+                        "value": "animal-associated habitat"
+                    },
+                    {
+                        "key": "environmental package",
+                        "unit": null,
+                        "value": "microbial mat/biofilm"
+                    },
+                    {
+                        "key": "depth",
+                        "unit": null,
+                        "value": "10.0-13.0"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "22.38"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX Titanium"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "Sc2b",
+                "species": null
+            },
+            "id": "SRS652167",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS652167"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS652167/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004674",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004674"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS652167/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005587",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003288",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2509,
+                "longitude": -82.1327,
+                "sample-alias": "SMP ICM_CCB CCB_0009_2008_03_26",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.13271"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2509"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0009_2008_03_26",
+                "species": null
+            },
+            "id": "SRS005587",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005587"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005587/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005587/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005588",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003289",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2509,
+                "longitude": -82.1327,
+                "sample-alias": "SMP ICM_CCB CCB_0010_2008_03_26",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.13271"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2509"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0010_2008_03_26",
+                "species": null
+            },
+            "id": "SRS005588",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005588"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005588/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005588/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005589",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003290",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2509,
+                "longitude": -82.1327,
+                "sample-alias": "SMP ICM_CCB CCB_0001_2008_03_26",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.13271"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2509"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0001_2008_03_26",
+                "species": null
+            },
+            "id": "SRS005589",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005589"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005589/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005589/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005590",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003291",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2509,
+                "longitude": -82.1327,
+                "sample-alias": "SMP ICM_CCB CCB_0002_2008_03_26",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.13271"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2509"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0002_2008_03_26",
+                "species": null
+            },
+            "id": "SRS005590",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005590"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005590/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005590/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005591",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003292",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2593,
+                "longitude": -82.1244,
+                "sample-alias": "SMP ICM_CCB CCB_0003_2008_03_27",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.12437"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2593"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0003_2008_03_27",
+                "species": null
+            },
+            "id": "SRS005591",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005591"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005591/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005591/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005592",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003293",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2509,
+                "longitude": -82.1327,
+                "sample-alias": "SMP ICM_CCB CCB_0004_2008_03_26",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.13271"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2509"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0004_2008_03_26",
+                "species": null
+            },
+            "id": "SRS005592",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005592"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005592/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005592/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005593",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003294",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2509,
+                "longitude": -82.1327,
+                "sample-alias": "SMP ICM_CCB CCB_0005_2008_03_26",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.13271"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2509"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0005_2008_03_26",
+                "species": null
+            },
+            "id": "SRS005593",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005593"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005593/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005593/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005594",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003295",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2509,
+                "longitude": -82.1327,
+                "sample-alias": "SMP ICM_CCB CCB_0006_2008_03_26",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.13271"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2509"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0006_2008_03_26",
+                "species": null
+            },
+            "id": "SRS005594",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005594"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005594/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005594/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005595",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003296",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2509,
+                "longitude": -82.1327,
+                "sample-alias": "SMP ICM_CCB CCB_0007_2008_03_26",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.13271"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2509"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0007_2008_03_26",
+                "species": null
+            },
+            "id": "SRS005595",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005595"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005595/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005595/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS005596",
+                "analysis-completed": "2019-04-12",
+                "biosample": "SAMN00003297",
+                "collection-date": null,
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": null,
+                "host-tax-id": null,
+                "last-update": "2019-04-12T16:24:42",
+                "latitude": 9.2509,
+                "longitude": -82.1327,
+                "sample-alias": "SMP ICM_CCB CCB_0008_2008_03_26",
+                "sample-desc": "No description currently available",
+                "sample-metadata": [
+                    {
+                        "key": "temperature",
+                        "unit": null,
+                        "value": "28.0"
+                    },
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.13271"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.2509"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2015-06-23"
+                    }
+                ],
+                "sample-name": "SMP ICM_CCB CCB_0008_2008_03_26",
+                "species": null
+            },
+            "id": "SRS005596",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005596"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005596/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004565",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004565"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS005596/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333413",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312256",
+                "collection-date": "2014-09-15",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _06",
+                "sample-desc": "BrdU_S T0_2",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-15"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_S T0_2",
+                "species": null
+            },
+            "id": "SRS2333413",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333413"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333413/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333413/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333414",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312257",
+                "collection-date": "2014-09-18",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _07",
+                "sample-desc": "BrdU_S AT66",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-18"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_S AT66",
+                "species": null
+            },
+            "id": "SRS2333414",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333414"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333414/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333414/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333415",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312255",
+                "collection-date": "2014-09-15",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _05",
+                "sample-desc": "BrdU_S T0_1",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-15"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_S T0_1",
+                "species": null
+            },
+            "id": "SRS2333415",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333415"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333415/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333415/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333416",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312254",
+                "collection-date": "2014-09-12",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _04",
+                "sample-desc": "BrdU_PrS CT66",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-12"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_PrS CT66",
+                "species": null
+            },
+            "id": "SRS2333416",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333416"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333416/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333416/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333417",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312260",
+                "collection-date": "2014-09-18",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _10",
+                "sample-desc": "BrdU_PoS T0",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-18"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_PoS T0",
+                "species": null
+            },
+            "id": "SRS2333417",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333417"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333417/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333417/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333418",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312261",
+                "collection-date": "2014-09-21",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _11",
+                "sample-desc": "BrdU_PoS AT66",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-21"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_PoS AT66",
+                "species": null
+            },
+            "id": "SRS2333418",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333418"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333418/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333418/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333419",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312258",
+                "collection-date": "2014-09-18",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _08",
+                "sample-desc": "BrdU_S BT66",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-18"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_S BT66",
+                "species": null
+            },
+            "id": "SRS2333419",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333419"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333419/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333419/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333420",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312259",
+                "collection-date": "2014-09-18",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _09",
+                "sample-desc": "BrdU_S CT66",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-18"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_S CT66",
+                "species": null
+            },
+            "id": "SRS2333420",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333420"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333420/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333420/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333421",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312262",
+                "collection-date": "2014-09-21",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _12",
+                "sample-desc": "BrdU_PoS BT66",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-21"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_PoS BT66",
+                "species": null
+            },
+            "id": "SRS2333421",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333421"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333421/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333421/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333422",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312263",
+                "collection-date": "2014-09-21",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _13",
+                "sample-desc": "BrdU_PoS CT66",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-21"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_PoS CT66",
+                "species": null
+            },
+            "id": "SRS2333422",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333422"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333422/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333422/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        },
+        {
+            "attributes": {
+                "accession": "SRS2333423",
+                "analysis-completed": "2019-04-06",
+                "biosample": "SAMN07312252",
+                "collection-date": "2014-09-12",
+                "environment-biome": null,
+                "environment-feature": null,
+                "environment-material": null,
+                "geo-loc-name": "Panama: Bocas del Toro",
+                "host-tax-id": null,
+                "last-update": "2019-04-06T21:33:14",
+                "latitude": 9.3272,
+                "longitude": -82.2039,
+                "sample-alias": "BrdU _02",
+                "sample-desc": "BrdU_PrS AT66",
+                "sample-metadata": [
+                    {
+                        "key": "geographic location (longitude)",
+                        "unit": null,
+                        "value": "-82.2039"
+                    },
+                    {
+                        "key": "geographic location (country and/or sea,region)",
+                        "unit": null,
+                        "value": "Panama: Bocas del Toro"
+                    },
+                    {
+                        "key": "collection date",
+                        "unit": null,
+                        "value": "2014-09-12"
+                    },
+                    {
+                        "key": "geographic location (latitude)",
+                        "unit": null,
+                        "value": "9.3272"
+                    },
+                    {
+                        "key": "instrument model",
+                        "unit": null,
+                        "value": "454 GS Junior"
+                    },
+                    {
+                        "key": "last update date",
+                        "unit": null,
+                        "value": "2017-07-04"
+                    }
+                ],
+                "sample-name": "BrdU_PrS AT66",
+                "species": null
+            },
+            "id": "SRS2333423",
+            "links": {
+                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333423"
+            },
+            "relationships": {
+                "biome": {
+                    "data": {
+                        "id": "root:Environmental:Aquatic:Marine:Intertidal zone:Coral reef",
+                        "type": "biomes"
+                    },
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef"
+                    }
+                },
+                "runs": {
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333423/runs"
+                    }
+                },
+                "studies": {
+                    "data": [
+                        {
+                            "id": "MGYS00004487",
+                            "links": {
+                                "self": "https://www.ebi.ac.uk/metagenomics/api/v1/studies/MGYS00004487"
+                            },
+                            "type": "studies"
+                        }
+                    ],
+                    "links": {
+                        "related": "https://www.ebi.ac.uk/metagenomics/api/v1/samples/SRS2333423/studies"
+                    },
+                    "meta": {
+                        "count": 1
+                    }
+                }
+            },
+            "type": "samples"
+        }
+    ],
+    "links": {
+        "first": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef/samples?page=1",
+        "last": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef/samples?page=29",
+        "next": "https://www.ebi.ac.uk/metagenomics/api/v1/biomes/root:Environmental:Aquatic:Marine:Intertidal%20zone:Coral%20reef/samples?page=2",
+        "prev": null
+    },
+    "meta": {
+        "pagination": {
+            "count": 706,
+            "page": 1,
+            "pages": 29
+        }
+    }
+}
