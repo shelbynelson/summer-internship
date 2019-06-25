@@ -48,7 +48,6 @@ def main():
     data_list = []
     count = 0
     mu = '\u03BC'
-    
 
     data = open(in_file).read()
     fixed_file = json.loads(re.sub('[\r\n]', '', data))
@@ -65,8 +64,7 @@ def main():
                     value = data[key]
                     if key_count < 2:
                         d[key] = value
-                        #print('{}: '.format(key),end='')                    #key like "type or id"
-                        #print('{}\n'.format(value))                 #value like "samples or SRS5657..."
+                        #'''                   
                     elif key == 'attributes':
                         for key2 in value:
                             if key2 == 'sample-metadata':
@@ -80,7 +78,6 @@ def main():
                                                 col_header = 'bacterial carbon production'
                                             elif col_header == 'samplingcruise':
                                                 col_header = 'sampling cruise'
-
                                         elif keys == 'unit':
                                             unit_header = col_header + '_units'
                                             if (attrib_dict is not None) and ('&micro;' in attrib_dict):
@@ -88,7 +85,6 @@ def main():
                                             if (attrib_dict is not None) and ('&deg;' in attrib_dict):
                                                 attrib_dict = attrib_dict.replace('&deg;', '')
                                             unit_val = attrib_dict
-
                                         else:
                                             data_val = attrib_dict
                                             d[col_header] = data_val
@@ -97,22 +93,38 @@ def main():
                                                 del d[unit_header]
                                             if (col_header == 'collection date'):
                                                 del d[col_header]       
-                            
                             else:
-                                d[key2] = value[key2]                        
-                    '''
+                                d[key2] = value[key2]
+                        #'''                              
                     elif key == 'links':
                         for key2 in value:
-                            print('{}: '.format(key2),end='')            #self      #I think this isnt needed, but unsure
-                            print('{}'.format(value[key2]))             #The link
-                    '''
+                            d['samples '+key+' '+key2] = value[key2]  
+                    elif key == 'relationships':
+                        for key2 in value:
+                            value2 = value[key2]
+                            for key3 in value2:
+                                value3 = value2[key3]    
+                                for key4 in value3:
+                                    if (key3 == 'data') and (key2 == 'studies'):
+                                        for pair in key4:
+                                            if pair == 'links':
+                                                deeper = key4[pair]
+                                                for keylink in deeper:
+                                                    d[key +' '+pair+' '+key2+' '+keylink] = deeper[keylink]
+                                            else:
+                                                d[pair+' '+key2] = key4[pair]            
+                                    elif key3 == 'links':
+                                        d[key +' '+key3+' '+key2] = value3[key4]       
+                                    elif (key3 == 'data') and (key2 == 'biome'):
+                                        d[key4+' '+key2]= value3[key4]                            
                     key_count = key_count + 1
                 data_list.append(d)
-                #break                                                  #For debugging
+                #break                                                  #For debugging one sample
         count = count + 1
-
+    #'''
     df = pd.DataFrame(data_list) 
-    df.to_csv('amazon_data_output.tsv', sep='\t', encoding='utf-8') 
+    df.to_csv('amazon_data_output_w_links.tsv', sep='\t', encoding='utf-8')
+    #'''
 
 # --------------------------------------------------
 if __name__ == '__main__':
