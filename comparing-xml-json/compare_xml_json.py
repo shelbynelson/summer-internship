@@ -79,10 +79,13 @@ def main():
     
 
     print(in_both)
+    print(len(in_both))
     print('\n')
     print(all_samples)
+    print(len(all_samples))
     print('\n')
     print(not_in_both)
+    print(len(not_in_both))
 
 # --------------------------------------------------
 if __name__ == '__main__':
