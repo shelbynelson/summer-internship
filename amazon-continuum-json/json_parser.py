@@ -2,7 +2,7 @@
 """
 Author : Shelby Nelson shelbeezy@email.arizona.edu
 Date   : 2019-06-18
-Purpose: Parse data from a JSON Amazon Continuum Metagenomes file with seperated values and units
+Purpose: Parse data from a JSON file to get the general columns, values, and units. This program DOES NOT catch duplicate columns like "collection date" vs "collection-date"
 """
 import json
 import csv
@@ -68,7 +68,29 @@ def main():
                                     for keys in attrib:                 #Pasted here
 
                                         attrib_dict = attrib[keys]
-                                                                                                               
+                                        
+                                        if keys == 'key':               #This saves keys from metadata like "latitude"
+                                            col_header = attrib_dict
+                                        elif keys == 'value':           #This saves value from metadata like "406.5"
+                                            data_val = attrib_dict
+                                        else:                           #This saves units from metadata like "pmol"
+                                            if (attrib_dict is not None) and ('&micro;' in attrib_dict):
+                                                attrib_dict = attrib_dict.replace('&micro;', mu)
+                                            if (attrib_dict is not None) and ('&deg;' in attrib_dict):
+                                                attrib_dict = attrib_dict.replace('&deg;', '')
+                                            unit_val = attrib_dict
+
+                                    unit_header = col_header + '_units'        
+                                    d[col_header] = data_val
+                                            
+                                    if unit_val is not None:
+                                        d[unit_header] = unit_val
+                                    #if ((col_header == 'environment (biome)') or (col_header == 'environment (feature)') or (col_header == 'environment (material)') or (col_header == 'geographic location (country and/or sea,region)') or (col_header == 'geographic location (longitude)') or (col_header == 'geographic location (latitude)')):
+                                            #del d[col_header] 
+                                          
+
+
+                                        '''
                                         if keys == 'key':                  #This saves keys from metadata like "latitude"
                                             col_header = attrib_dict
                                             if col_header == 'bacterialcarbon production':
@@ -89,9 +111,11 @@ def main():
                                             if unit_val is None:
                                                 del d[unit_header]
                                             if (col_header == 'collection date'):
-                                                del d[col_header]       
+                                                del d[col_header]'''       
+
                             else:                                       #This is for the key,value pairs that are in the attributes section and not in metadata
-                                d[key2] = value[key2]                    
+                                d[key2] = value[key2]
+                        #'''                              
                     elif key == 'links':                                #This is the links that is in an individual sample
                         for key2 in value:
                             d['samples '+key+' '+key2] = value[key2]  
@@ -114,10 +138,11 @@ def main():
                                     elif (key3 == 'data') and (key2 == 'biome'):        #biome's data
                                         d[key4+' '+key2]= value3[key4]                            
                 data_list.append(d)
-                #break                                                                   #For debugging one sample
+                #break                                                  #For debugging one sample
+    #'''
     df = pd.DataFrame(data_list) 
-    df.to_csv('amazon_final_data_output.tsv', sep='\t', encoding='utf-8')
-    
+    df.to_csv('raw_parsed_output.tsv', sep='\t', encoding='utf-8')
+    #'''
 
 # --------------------------------------------------
 if __name__ == '__main__':
