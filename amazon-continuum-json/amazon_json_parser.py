@@ -46,47 +46,41 @@ def main():
         sys.exit(1)
 
     data_list = []
-    count = 0
     mu = '\u03BC'
 
     data = open(in_file).read()
     fixed_file = json.loads(re.sub('[\r\n]', '', data))
 
-    for section in fixed_file:
-        print(section)          #changed
-        if section == 'data':      #changed from if count == 1 
+    for section in fixed_file:                          #Overall sections like data, links, and meta
+        if section == 'data':                           #data section including all samples
             data_dict = fixed_file[section]
             for data in data_dict:
                 d = {}
-                key_count = 0
-                #print(data)         #changed for baltic
                 for key in data:
-                    #print(key)          #changed for baltic
                     value = data[key]
-                    if key_count < 2:
-                        d[key] = value
-                        #'''                   
-                    elif key == 'attributes':
+                    if ((key == 'type') or (key == 'id')):      #type and ID section for individual sample
+                        d[key] = value  
+                    elif key == 'attributes':                   #attributes section for individual sample
                         for key2 in value:
-                            if key2 == 'sample-metadata':
+                            if key2 == 'sample-metadata':       #sample metadata for individual sample
                                 metadata_dict = value[key2]
                                 for attrib in metadata_dict:
                                     for keys in attrib:
                                         attrib_dict = attrib[keys]
-                                        if keys == 'key':
+                                        if keys == 'key':                  #This saves keys from metadata like "latitude"
                                             col_header = attrib_dict
                                             if col_header == 'bacterialcarbon production':
                                                 col_header = 'bacterial carbon production'
                                             elif col_header == 'samplingcruise':
                                                 col_header = 'sampling cruise'
-                                        elif keys == 'unit':
+                                        elif keys == 'unit':                #This saves units from metadata like "pmol"
                                             unit_header = col_header + '_units'
                                             if (attrib_dict is not None) and ('&micro;' in attrib_dict):
                                                 attrib_dict = attrib_dict.replace('&micro;', mu)
                                             if (attrib_dict is not None) and ('&deg;' in attrib_dict):
                                                 attrib_dict = attrib_dict.replace('&deg;', '')
                                             unit_val = attrib_dict
-                                        else:
+                                        else:                               #This saves value from metadata like "406.5"
                                             data_val = attrib_dict
                                             d[col_header] = data_val
                                             d[unit_header] = unit_val
@@ -94,37 +88,35 @@ def main():
                                                 del d[unit_header]
                                             if (col_header == 'collection date'):
                                                 del d[col_header]       
-                            else:
+                            else:                                       #This is for the key,value pairs that are in the attributes section and not in metadata
                                 d[key2] = value[key2]
                         #'''                              
-                    elif key == 'links':
+                    elif key == 'links':                                #This is the links that is in an individual sample
                         for key2 in value:
                             d['samples '+key+' '+key2] = value[key2]  
-                    elif key == 'relationships':
+                    elif key == 'relationships':                        #This is for the data in the relationships section for a sample
                         for key2 in value:
                             value2 = value[key2]
                             for key3 in value2:
                                 value3 = value2[key3]    
                                 for key4 in value3:
-                                    if (key3 == 'data') and (key2 == 'studies'):
+                                    if (key3 == 'data') and (key2 == 'studies'):        #gets data from studies
                                         for pair in key4:
-                                            if pair == 'links':
+                                            if pair == 'links':                         #gets the link from relationships>studies>data>links>self>"the link"
                                                 deeper = key4[pair]
                                                 for keylink in deeper:
                                                     d[key +' '+pair+' '+key2+' '+keylink] = deeper[keylink]
                                             else:
                                                 d[pair+' '+key2] = key4[pair]            
-                                    elif key3 == 'links':
+                                    elif key3 == 'links':                               #Relationship links for biome, runs, and studies
                                         d[key +' '+key3+' '+key2] = value3[key4]       
-                                    elif (key3 == 'data') and (key2 == 'biome'):
+                                    elif (key3 == 'data') and (key2 == 'biome'):        #biome's data
                                         d[key4+' '+key2]= value3[key4]                            
-                    key_count = key_count + 1
                 data_list.append(d)
                 #break                                                  #For debugging one sample
-        count = count + 1
     #'''
     df = pd.DataFrame(data_list) 
-    df.to_csv('baltic_data_output.tsv', sep='\t', encoding='utf-8')
+    df.to_csv('amazon_final_data_output.tsv', sep='\t', encoding='utf-8')
     #'''
 
 # --------------------------------------------------
