@@ -53,14 +53,15 @@ def main():
     fixed_file = json.loads(re.sub('[\r\n]', '', data))
 
     for section in fixed_file:
-        if count == 1:
+        print(section)          #changed
+        if section == 'data':      #changed from if count == 1 
             data_dict = fixed_file[section]
-
             for data in data_dict:
                 d = {}
                 key_count = 0
-
+                #print(data)         #changed for baltic
                 for key in data:
+                    #print(key)          #changed for baltic
                     value = data[key]
                     if key_count < 2:
                         d[key] = value
@@ -123,7 +124,7 @@ def main():
         count = count + 1
     #'''
     df = pd.DataFrame(data_list) 
-    df.to_csv('amazon_data_output_w_links.tsv', sep='\t', encoding='utf-8')
+    df.to_csv('baltic_data_output.tsv', sep='\t', encoding='utf-8')
     #'''
 
 # --------------------------------------------------
