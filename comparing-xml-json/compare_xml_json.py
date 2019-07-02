@@ -16,11 +16,11 @@ import re
 def get_args():
     """get command-line arguments"""
     parser = argparse.ArgumentParser(
-        description='Argparse Python script',
+        description='Comparing the output of two .tsv files Python script',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument(
-        'files', metavar='FILES', help='Text.tsv file input', nargs='+')
+        'file', metavar='FILE', help='Text.TSV file input', nargs=2)
 
     return parser.parse_args()
 
@@ -38,32 +38,35 @@ def die(msg='Something bad happened'):
 # --------------------------------------------------
 def main():
     args = get_args()
-    files_ = args.files
+    files_ = args.file
     
     #---------------------------This section reads the files and gets the biosample names--------------------------------------------------
     biosample_re = re.compile('^bio([\s/-])?sample(s)?$')
     file_count = 1
+    
     for tsv_file in files_:
         samples_d = []
         if not os.path.isfile(tsv_file):
             die('input file "{}" is not a file'.format(tsv_file))
+        elif (('.tsv' not in tsv_file) and ('.csv' not in tsv_file)):
+            die('input file "{}" is not a .tsv or .csv file'.format(tsv_file))
         else:
-            with open(tsv_file) as f:
+            with open(tsv_file) as f:    
                 reader = csv.DictReader(f, dialect='excel-tab')
                 d_list = []
                 for line in reader:
-                    d_list.append(line)
-                for sample in d_list:
+                    d_list.append(line)  
+                for sample in d_list:                  
                     for col_header in sample:
                         if biosample_re.match(col_header.lower()):
                             samples_d.append(sample[col_header])
+
         if file_count == 1:
             first_samples_d = samples_d
             first_file_name = tsv_file
         elif file_count == 2:
             sec_file_name = tsv_file
-
-        file_count = file_count + 1
+        file_count += 1
     
     #--------------This section compares the two lists-------------------------------------------------------------------------
     first_file_d = set(first_samples_d)
@@ -84,8 +87,8 @@ def main():
     #print(not_in_both)                 #Prints the samples that are not the same in both files
     #print(len(not_in_both))            #Printd the number of samples that are not the same in both files
 
-    nf1_counter = 0 
-    nf2_counter = 0
+    nf1_counter = 0                     #counts the number of samples that are not in the first file
+    nf2_counter = 0                     #counts the number of samples that are not in the second file
     in_1_not_2 = []
     in_2_not_1 = []
     for samp in not_in_both:            #Compares samples in "not_in_both" to samples in the first and second files
@@ -98,21 +101,24 @@ def main():
                 in_2_not_1.append(samp)     #Appends the samples to a list that are in the second file and are not in the first file
                 nf2_counter+=1
 
-    #-----------This section prints the outcome of the program-----------------------------------------------------------------------------
-   
-    #Prints the total number of samples in each file
-    print('\nThere are {} samples in {}\n\nThere are {} samples in {}\n'.format(f1_count,first_file_name,f2_count, sec_file_name))
+    #-----------This section writes the outcome of the program to comparizon_output.txt-----------------------------------------------------------------------------
+    outfile = open('comparison_output.txt', 'w')
 
-    #Prints the number of samples that are in the first file and not in second, the file names, and a list of the samples
-    print('There are {} samples in {} file that are not found in {} file: '.format(nf1_counter, first_file_name, sec_file_name))
+    #print('\nThere are {} samples in {}\n\nThere are {} samples in {}\n'.format(f1_count,first_file_name,f2_count, sec_file_name))
+    outfile.write('There are {} samples in {}\n\nThere are {} samples in {}\n\n'.format(f1_count,first_file_name,f2_count, sec_file_name))
+
+    #print('There are {} samples in {} file that are not found in {} file: '.format(nf1_counter, first_file_name, sec_file_name))
+    outfile.write('There are {} samples in {} file that are not found in {} file: '.format(nf1_counter, first_file_name, sec_file_name))
     if in_1_not_2:
-        print(in_1_not_2)
+        #print(in_1_not_2)
+        outfile.write(str(in_1_not_2))
 
-    #Prints the number of samples that are in the second file and not in first, the file names, and a list of the samples
-    print('\nThere are {} samples in {} file that are not found in {} file:'.format(nf2_counter,sec_file_name, first_file_name))
+    #print('\nThere are {} samples in {} file that are not found in {} file:'.format(nf2_counter,sec_file_name, first_file_name))
+    outfile.write('\n\nThere are {} samples in {} file that are not found in {} file:'.format(nf2_counter,sec_file_name, first_file_name))
     if in_2_not_1:
-        print(in_2_not_1)
-    print('\n')
+        #print(in_2_not_1)
+        outfile.write(str(in_2_not_1))
+    print('The output has been written to "comparison_output.txt"')
         
 # ------------------------------------------------------------------------------------------
 if __name__ == '__main__':

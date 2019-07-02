@@ -1,0 +1,7 @@
+There are 25 samples in raw_parsed_output_baltic.tsv
+
+There are 37 samples in baltic_sea_all.tsv
+
+There are 0 samples in raw_parsed_output_baltic.tsv file that are not found in baltic_sea_all.tsv file: 
+
+There are 12 samples in baltic_sea_all.tsv file that are not found in raw_parsed_output_baltic.tsv file:['SAMN03351365', 'SAMN03351411', 'SAMN03351397', 'SAMN03351369', 'SAMN03351415', 'SAMN03351418', 'SAMN03351409', 'SAMN03351395', 'SAMN03351378', 'SAMN03351399', 'SAMN03351359', 'SAMN03351406']
