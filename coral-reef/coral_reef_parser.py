@@ -117,8 +117,8 @@ def main():
                                             elif keys == 'value':
                                                 data_val = attrib_dict
                                             else:
-                                                
                                                 unit_val = attrib_dict
+
                                         unit_header = col_header + '_units'        
                                         d[col_header] = data_val
                                                

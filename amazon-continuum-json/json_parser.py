@@ -115,6 +115,7 @@ def main():
     df = pd.DataFrame(data_list) 
     df.to_csv('raw_parsed_output.tsv', sep='\t', encoding='utf-8')
     
+
 # --------------------------------------------------
 if __name__ == '__main__':
     main()
