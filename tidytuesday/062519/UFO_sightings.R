@@ -24,23 +24,23 @@ ufo_sightings_US <-
 
 ufo_tucson <- 
    mutate(ufo_sightings_US, 
-          ufo_shape = case_when(ufo_shape == "cigar"~"cigar/ cylinder",
-                                ufo_shape == "cylinder"~"cigar/ cylinder",
+          ufo_shape = case_when(ufo_shape == "cigar" ~ "cigar/ cylinder",
+                                ufo_shape == "cylinder" ~ "cigar/ cylinder",
                                 ufo_shape == "unknown" ~ "other/ unknown",
                                 ufo_shape == "other" ~ "other/ unknown",
                                 ufo_shape == "circle" ~ "circle/ disk/ sphere",
                                 ufo_shape == "disk" ~ "circle/ disk/ sphere",
                                 ufo_shape == "sphere" ~ "circle/ disk/ sphere",
                                 ufo_shape == "oval" ~ "egg/ oval",
-                                ufo_shape == "egg"~"egg/ oval",
-                                ufo_shape == "fireball"~"fireball/ flash/ light",
+                                ufo_shape == "egg" ~ "egg/ oval",
+                                ufo_shape == "fireball" ~ "fireball/ flash/ light",
                                 ufo_shape == "flash" ~ "fireball/ flash/ light",
-                                ufo_shape == "light"~"fireball/ flash/ light",
+                                ufo_shape == "light" ~ "fireball/ flash/ light",
                                 TRUE ~ ufo_shape)) %>% 
    na.omit()
 
-ggplot(data=ufo_tucson) +
-   geom_jitter(mapping=aes(x=year_spotted,
+ggplot(data = ufo_tucson) +
+   geom_jitter(mapping = aes(x = year_spotted,
                            y = ..count..,
                            shape = ufo_shape),
                stroke = 1.75,
@@ -49,7 +49,7 @@ ggplot(data=ufo_tucson) +
                height = 0.25,
                size = 5,
                stat = "count") +
-   scale_shape_manual(values=c(11,14,10,1,3,5,16,8,9,4,0,6,2)) +
+   scale_shape_manual(values = c(11,14,10,1,3,5,16,8,9,4,0,6,2)) +
    labs(title = "UFO Sightings in Tucson, Arizona from 1990-2015",
         subtitle = "Created by Shelby Nelson @shelbynelson",
         x = "Year",
