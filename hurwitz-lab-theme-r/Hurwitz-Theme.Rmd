@@ -1,0 +1,33 @@
+---
+title: "Hurwitz-Theme"
+author: "Shelby Nelson @shelbynelson"
+date: "July 17, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Hurwitz Lab Colors
+The following variable, hurwitz_colors, holds the Hurwitz Lab colors. The first eleven colors follow the Hurwitz Lab theme and the last five are random colors in case there is more keys in the data.
+
+```{r}
+
+hurwitz_colors <- c("#018d97", "#f5811f", "gold", "#61cddc", "#6a6a6a", "tomato4", "tan", "darkslategray1", "gray20", "gray80", "burlywood4", "red", "yellow", "darkgreen", "blue", "purple")
+
+
+
+```
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
