@@ -53,7 +53,8 @@ ggplot(data = ufo_tucson) +
    labs(title = "UFO Sightings in Tucson, Arizona from 1990-2015",
         subtitle = "Created by Shelby Nelson @shelbynelson",
         x = "Year",
-        y = "Number of Sightings") +
+        y = "Number of Sightings",
+        shape="UFO Shape") +
    theme(plot.background = element_rect(color = "black"),
          panel.background = element_rect(fill = "paleturquoise"),
          panel.grid = element_line(color = "tan"),
