@@ -44,18 +44,12 @@ ufo_tucson <-
    na.omit()
 
 #--------COLORS--------------------------------------------------------------------------------
-#
-#   The following variable, hurwitz_colors, holds the Hurwitz Lab colors. The first 
-#   eleven colors follow the Hurwitz Lab theme and the last four are random colors in 
-#   case there were more keys in the legend.
 
 hurwitz_colors <- c("#018d97", "#f5811f", "gold", "#61cddc", "#6a6a6a", "tomato4", "tan", "darkslategray1", "gray20", "gray80", "burlywood4", "red", "yellow", "darkgreen", "blue", "purple")
 
 
 
 #--------THEME---------------------------------------------------------------------------------   
-#
-#   
 
 hurwitz_theme <- theme(text = element_text(family = "Times New Roman",      #This sets every text in the plot to the default: Times New Roman, size 15, black
                                            size = 15,
