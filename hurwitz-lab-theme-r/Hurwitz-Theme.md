@@ -84,7 +84,7 @@ The following code block is a condensed and cleaned up version of the above desc
 
 ## All Code Needed to Use the Theme 
 
-The following code block includes all of the code you would need to be able to use the Hurwitz colors, theme, and font. Sidenote: `loadfonts(device = 'win')` loads the fonts onto a windows device.
+The following code block includes all of the code you would need to be able to use the Hurwitz colors, theme, and font. Here is the actual [script](https://github.com/shelbynelson/summer-internship/blob/master/hurwitz-lab-theme-r/Hurwitz_Theme_Code.R) for the theme code. Sidenote: `loadfonts(device = 'win')` loads the fonts onto a windows device.
 
      library(tidyverse)
      library(extrafont)
