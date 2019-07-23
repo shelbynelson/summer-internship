@@ -3,7 +3,7 @@
 
 ## Hurwitz Lab Colors
 
-The following variable, hurwitz_colors, holds the Hurwitz Lab colors. The first eleven colors follow the Hurwitz Lab theme and the last five are random colors in case there is more keys in the data. 
+The following variable, `hurwitz_colors`, holds the Hurwitz Lab colors. The first eleven colors follow the Hurwitz Lab theme and the last five are random colors in case there is more keys in the data. 
 
      hurwitz_colors <- c("#018d97", "#f5811f", "gold", "#61cddc", "#6a6a6a", "tomato4", "tan", "darkslategray1", "gray20", "gray80", "burlywood4", "red", "yellow", "darkgreen", "blue", "purple")
      
@@ -16,7 +16,7 @@ This variable is intended to be used in the ggplot line of code. The following i
 
 ## Hurwitz Lab Theme Descriptive Code
 
-The following code block puts the theme into the hurwitz_theme variable. Each line includes an element in the theme followed by a short description of the element and the "default" for this theme. For example, the first element is text and this sets all of the text throughout the plot to be the same font, size, and color. 
+The following code block puts the theme into the `hurwitz_theme` variable. Each line includes an element in the theme followed by a short description of the element and the "default" for this theme. For example, the first element is text and this sets all of the text throughout the plot to be the same font, size, and color. 
      
      hurwitz_theme <- theme(text = element_text(family = "Times New Roman",      #This sets every text in the plot to the default: Times New Roman, size 15, black
                                                 size = 15,
@@ -84,7 +84,7 @@ The following code block is a condensed and cleaned up version of the above desc
 
 ## All Code Needed to Use the Theme 
 
-The following code block includes all of the code you would need to be able to use the Hurwitz colors, theme, and font. Sidenote: `loadfonts(device = 'win')` is to load the fonts onto a windows device.
+The following code block includes all of the code you would need to be able to use the Hurwitz colors, theme, and font. Sidenote: `loadfonts(device = 'win')` loads the fonts onto a windows device.
 
      library(tidyverse)
      library(extrafont)
