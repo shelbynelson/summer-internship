@@ -100,5 +100,14 @@ venv.bak/
 # mkdocs documentation
 /site
 
+# american-gut-project
+10317_20190722-115427.txt
+ena.xml
+metadata.xlsx
+PRJEB11419.txt
+WGS_data.txt
+wgs_metadata.txt
+ERR1072634
+
 # mypy
 .mypy_cache/
