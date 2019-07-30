@@ -101,13 +101,14 @@ venv.bak/
 /site
 
 # american-gut-project
-10317_20190722-115427.txt
-ena.xml
-metadata.xlsx
-PRJEB11419.txt
-WGS_data.txt
-wgs_metadata.txt
-ERR1072634
+american-gut-project/10317_20190722-115427.txt
+american-gut-project/ena.xml
+american-gut-project/metadata.xlsx
+american-gut-project/PRJEB11419.txt
+american-gut-project/WGS_data.txt
+american-gut-project/wgs_metadata.txt
+american-gut-project/ERR1072634
+american-gut-project/ERP012803.xml
 
 # mypy
 .mypy_cache/
